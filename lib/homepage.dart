@@ -1,16 +1,19 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_declarations, camel_case_types
+// ignore_for_file: prefer_const_constructors, camel_case_types
 
 import 'package:flutter/material.dart';
 
 class homepage extends StatelessWidget {
+  const homepage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    final String a = "Hello!";
     return Scaffold(
       appBar: AppBar(
-        title: Text("hello"),
+        title: Text("data"),
       ),
-      body: Center(child: Text(a + " Welcome to flutter")),
+      body: Center(
+        child: Text("data"),
+      ),
       drawer: Drawer(),
     );
   }

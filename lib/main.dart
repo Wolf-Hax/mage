@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:mage/homepage.dart';
+
+import 'homepage.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -10,6 +11,8 @@ void main(List<String> args) {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: homepage());
+    return MaterialApp(
+      home: homepage(),
+    );
   }
 }
