@@ -7,12 +7,13 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const greeting = "WELCOME!";
     return Scaffold(
       appBar: AppBar(
-        title: Text("data"),
+        title: Text("About"),
       ),
       body: Center(
-        child: Text("data"),
+        child: Text("$greeting To Flutter"),
       ),
       drawer: Drawer(),
     );
