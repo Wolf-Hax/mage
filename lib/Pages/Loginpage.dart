@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, avoid_print, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:mage/utili/routes.dart';
 
 class Loginpage extends StatelessWidget {
   @override
@@ -12,6 +13,10 @@ class Loginpage extends StatelessWidget {
             Image.asset(
               "assets/Images/Login_image.png",
               fit: BoxFit.cover,
+            ),
+            Text(
+              "WELCOME",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 20,
@@ -36,14 +41,11 @@ class Loginpage extends StatelessWidget {
                     height: 20,
                   ),
                   ElevatedButton(
-                    onPressed: () {
-                      print("hi");
-                    },
-                    child: Text("Login"),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.blue)),
-                  ),
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      },
+                      child: Text("Login"),
+                      style: TextButton.styleFrom(minimumSize: Size(150, 40))),
                 ],
               ),
             ),
